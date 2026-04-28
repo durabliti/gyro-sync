@@ -1,0 +1,28 @@
+<svg width="900" height="300" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+  <linearGradient id="bg" x1="0" x2="1">
+    <stop offset="0%" stop-color="#0f0c29"/>
+    <stop offset="50%" stop-color="#302b63"/>
+    <stop offset="100%" stop-color="#24243e"/>
+  </linearGradient>
+</defs>
+
+<rect width="100%" height="100%" fill="url(#bg)" rx="20"/>
+
+<text x="450" y="40" fill="white" font-size="22" text-anchor="middle">
+SYSTEM OVERVIEW
+</text>
+
+<text x="450" y="90" fill="#00c6ff" font-size="16" text-anchor="middle">
+📱 Gyroscope → 🧠 Quaternion → 📡 UDP → 💻 PC → 🖥 Render
+</text>
+
+<line x1="100" y1="140" x2="800" y2="140" stroke="#00c6ff" stroke-width="2"/>
+
+<circle cx="100" cy="140" r="10" fill="#00c6ff"/>
+<circle cx="300" cy="140" r="10" fill="#7c4dff"/>
+<circle cx="500" cy="140" r="10" fill="#00ffc8"/>
+<circle cx="700" cy="140" r="10" fill="#ffffff"/>
+
+</svg>

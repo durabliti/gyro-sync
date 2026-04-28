@@ -1,0 +1,17 @@
+<svg width="900" height="250" xmlns="http://www.w3.org/2000/svg">
+
+<rect width="100%" height="100%" fill="#050510"/>
+
+<text x="450" y="40" fill="white" font-size="22" text-anchor="middle">
+DATA FLOW
+</text>
+
+<text x="450" y="120" fill="#00ffc8" font-size="18" text-anchor="middle">
+📱 → 🧠 → 📡 → 💻 → 🖥
+</text>
+
+<text x="450" y="170" fill="#7c4dff" font-size="14" text-anchor="middle">
+Sensor → Math → Network → Processing → Rendering
+</text>
+
+</svg>
