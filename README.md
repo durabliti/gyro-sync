@@ -26,6 +26,7 @@
 <p align="left">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=py,numpy,linux,windows" />
+    <img width="747" height="786" alt="Image" src="https://github.com/user-attachments/assets/4dcc32cc-dbdb-437c-b90b-fe5d20194dab" />
   </a>
 </p>
 
