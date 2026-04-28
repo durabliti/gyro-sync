@@ -1,45 +1,85 @@
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=py,numpy,scipy" height="90"/>
+<!-- NEON GRADIENT TITLE (SVG) -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=140&section=header&text=gyro-sync&fontSize=40&fontColor=ffffff&animation=fadeIn" />
 
-# 🔷 gyro-sync
-
-### real-time 3d smartphone orientation mirroring via udp
+### 🌐 real-time 3D smartphone orientation mirroring via UDP
 
 ---
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/status-active-success?style=for-the-badge)
+![SciPy](https://img.shields.io/badge/scipy-0A66C2?style=for-the-badge)
+![NumPy](https://img.shields.io/badge/numpy-013243?style=for-the-badge)
+![License](https://img.shields.io/badge/license-MIT-00ff88?style=for-the-badge)
+![Status](https://img.shields.io/badge/status-active-7CFC00?style=for-the-badge)
+
+---
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f5ff,100:7c4dff&height=2"/>
 
 </div>
 
 ---
 
-# 🚀 features
+# ⚡ CORE FEATURES
 
-- ⚡ **zero latency udp streaming**
-- 🧩 **quaternion-based rotation** *(no gimbal lock)*
-- 🎯 **instant calibration system**
-- 📦 **lightweight python-only pipeline**
+```diff
++ ⚡ ultra-low latency UDP streaming
++ 🧠 quaternion-based rotation (no gimbal lock)
++ 🎯 instant calibration system
++ 📦 pure Python architecture (no engine dependency)
+🧬 SYSTEM PIPELINE
+📱 Gyroscope Sensor
+        ↓
+🧮 Quaternion Conversion
+        ↓
+📡 UDP Transmission
+        ↓
+💻 PC Receiver
+        ↓
+📐 3D Projection Engine
+        ↓
+🖥 Real-time Rendering
+🛠 TECH STACK
+Layer	Tech	Role
+🎮 Rendering	pygame	wireframe + visuals
+🧮 Math	numpy	matrix computation
+🧠 Rotation	scipy	quaternion engine
+📡 Network	UDP sockets	real-time sync
+📐 MATHEMATICAL CORE
+Perspective projection:
+factor=
+z
+dist
+	​
 
----
++point
+z
+	​
 
-# 🛠 tech stack
+z
+dist
+	​
 
-| Component | Role |
-|----------|------|
-| pygame | rendering engine |
-| numpy | matrix math |
-| scipy | quaternion rotation system |
+	​
 
----
+Quaternion stability layer:
+prevents gimbal lock
+ensures smooth 360° rotation
+maintains orientation integrity
+🎮 CONTROLS
+Key	Action
+C	recalibrate orientation
+ESC	exit application
+🌌 SYSTEM DESIGN GOAL
 
-# 📐 math core
+Real-time spatial synchronization between mobile gyroscope input and PC 3D visualization with minimal latency and maximal rotational accuracy.
 
-Projection formula used in rendering:
+🔥 PERFORMANCE NOTES
+🚀 UDP = near-zero overhead transport
+⚙️ numpy vectorization = fast math
+🧠 quaternion math = stable rotation
+🖥 lightweight renderer = smooth FPS
+🌈 FINAL STATEMENT
 
-```math
-factor = \frac{z_{dist}}{z_{dist} + point_z}
-pipeline:
-gyro sensor → quaternion → UDP stream → PC receiver → 3D projection → rendering
+Built for experiments in real-time spatial computing, motion tracking, and 3D visualization systems.
