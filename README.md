@@ -1,85 +1,72 @@
-<div align="center">
+<!-- HERO BANNER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:00c6ff&height=140&section=header&text=gyro-sync&fontSize=42&fontColor=ffffff" />
 
-<!-- NEON GRADIENT TITLE (SVG) -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=140&section=header&text=gyro-sync&fontSize=40&fontColor=ffffff&animation=fadeIn" />
+<div align="center">
 
 ### 🌐 real-time 3D smartphone orientation mirroring via UDP
 
 ---
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![SciPy](https://img.shields.io/badge/scipy-0A66C2?style=for-the-badge)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python)
 ![NumPy](https://img.shields.io/badge/numpy-013243?style=for-the-badge)
-![License](https://img.shields.io/badge/license-MIT-00ff88?style=for-the-badge)
-![Status](https://img.shields.io/badge/status-active-7CFC00?style=for-the-badge)
-
----
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f5ff,100:7c4dff&height=2"/>
+![SciPy](https://img.shields.io/badge/scipy-0A66C2?style=for-the-badge)
+![UDP](https://img.shields.io/badge/network-UDP-00ffcc?style=for-the-badge)
 
 </div>
 
 ---
 
-# ⚡ CORE FEATURES
+# ⚡ SYSTEM OVERVIEW (VISUAL FLOW)
 
-```diff
-+ ⚡ ultra-low latency UDP streaming
-+ 🧠 quaternion-based rotation (no gimbal lock)
-+ 🎯 instant calibration system
-+ 📦 pure Python architecture (no engine dependency)
-🧬 SYSTEM PIPELINE
-📱 Gyroscope Sensor
+``` id="x91m2a"
+📱 Smartphone Gyroscope
         ↓
-🧮 Quaternion Conversion
+🧠 Quaternion Conversion
         ↓
-📡 UDP Transmission
+📡 UDP Stream (low latency)
         ↓
 💻 PC Receiver
         ↓
 📐 3D Projection Engine
         ↓
-🖥 Real-time Rendering
-🛠 TECH STACK
-Layer	Tech	Role
-🎮 Rendering	pygame	wireframe + visuals
-🧮 Math	numpy	matrix computation
-🧠 Rotation	scipy	quaternion engine
-📡 Network	UDP sockets	real-time sync
-📐 MATHEMATICAL CORE
-Perspective projection:
-factor=
-z
-dist
-	​
+🖥 Real-time Wireframe Render
+🚀 FEATURES (VISUAL CARDS)
+⚡ ZERO LATENCY
+→ real-time UDP streaming pipeline
 
-+point
-z
-	​
+🧩 STABLE ROTATION
+→ quaternion math (no gimbal lock)
 
-z
-dist
-	​
+🎯 INSTANT CALIBRATION
+→ one key reset orientation
 
-	​
-
-Quaternion stability layer:
-prevents gimbal lock
-ensures smooth 360° rotation
-maintains orientation integrity
+📦 LIGHTWEIGHT
+→ pure Python stack, no engine
+🧮 MATHEMATICAL CORE
+📐 projection model
+factor = z_dist / (z_dist + point_z)
+🧠 meaning:
+closer objects → bigger
+farther objects → smaller
+simulates real camera perspective
+🧱 ARCHITECTURE MAP
+flowchart TD
+A[Phone Gyroscope] --> B[Quaternion Transform]
+B --> C[UDP Network Stream]
+C --> D[PC Receiver]
+D --> E[3D Engine]
+E --> F[Wireframe Render]
 🎮 CONTROLS
 Key	Action
 C	recalibrate orientation
-ESC	exit application
-🌌 SYSTEM DESIGN GOAL
+ESC	exit app
+🌌 PROJECT VIBE
 
-Real-time spatial synchronization between mobile gyroscope input and PC 3D visualization with minimal latency and maximal rotational accuracy.
+real-time spatial sync system between mobile motion sensors and desktop 3D visualization engine.
 
-🔥 PERFORMANCE NOTES
-🚀 UDP = near-zero overhead transport
-⚙️ numpy vectorization = fast math
+🔥 PERFORMANCE
+⚡ UDP = near zero overhead
 🧠 quaternion math = stable rotation
-🖥 lightweight renderer = smooth FPS
-🌈 FINAL STATEMENT
-
-Built for experiments in real-time spatial computing, motion tracking, and 3D visualization systems.
+🚀 numpy = vectorized speed
+🖥 pygame = lightweight rendering
+<!-- FOOTER WAVE --> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00c6ff,50:7c4dff,100:0f0c29&height=120&section=footer"/> ```
